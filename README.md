@@ -1,26 +1,22 @@
-# Project 1 - Flix Demo
+# TumblerDemo
+# Lab 1 - Tumbler Demo
 
-Flix Demo is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+Tumbler Demo is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: 6 hours spent in total
+Time spent: 3 hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [x] User sees app icon in home screen and styled launch screen (+1pt)
-- [x] User can scroll through a list of movies currently playing in theaters from The Movie DB API (+5pt)
-- [x] User can "Pull to refresh" the movie list (+2pt)
-- [x] User sees a loading state while waiting for the movies to load (+2pt)
+- [x] User can scroll through a feed of images returned from the Tumblr API (5pts)
 
 The following **stretch** user stories are implemented:
 
 - [x] User sees an alert when there's a networking error (+1pt)
-- [ ] User can search for a movie (+3pt)
 - [ ] While poster is being fetched, user see's a placeholder image (+1pt)
 - [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
 - [ ] Customize the selection effect of the cell (+1pt)
-- [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete (+2pt)
 
 The following **additional** user stories are implemented:
 
@@ -28,19 +24,19 @@ The following **additional** user stories are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. The auto layout restraints took me a while to understand. I want to know if I learned it correctly and if there is an easily way to use it.
+1. Debugging errors
 2. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Amzad/Flix-Demo/blob/master/videowalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Amzad/TumblerDemo/blob/master/tumbler.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-Had some issues with commiting milestones where using the terminal would cause xcode to revert all changes for some reason. Ended up only using the source control on xcode itself to commit and save all changes.
+I had empty outlets which caused errors. Took me a while to figure out how to remove them.
 
 ## License
 
