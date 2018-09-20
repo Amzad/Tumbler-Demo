@@ -16,24 +16,29 @@ class PhotoDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
-
-        // Do any additional setup after loading the view.
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTap(sender:)))
+        imageView.addGestureRecognizer(tap)
+        imageView.isUserInteractionEnabled = true
     }
+    
+    @objc func didTap(sender: UITapGestureRecognizer) {
+        let location = sender.location(in: view)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let fullScreenViewController =  mainStoryboard.instantiateViewController(withIdentifier: "FullScreenPhotoViewController") as! FullScreenPhotoViewController
+        
+        /* set the image */
+        fullScreenViewController.image = self.image
+        
+        /* trigger segue manually */
+        present(fullScreenViewController, animated: true, completion: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

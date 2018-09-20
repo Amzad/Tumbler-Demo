@@ -16,7 +16,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print("Running")
+
         tableView.dataSource = self
         tableView.delegate = self
         fetchImages()
@@ -55,7 +55,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
-        let post = posts[indexPath.row]
+        let post = posts[indexPath.section]
         if let photos = post["photos"] as? [[String: Any]] {
             let photo = photos[0]
             let originalSize = photo["original_size"] as! [String: Any]
@@ -90,17 +90,14 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         profileView.layer.cornerRadius = 15;
         profileView.layer.borderColor = UIColor(white: 0.7, alpha: 0.8).cgColor
         profileView.layer.borderWidth = 1;
+        headerView.addSubview(profileView)
         
-        // Set the avatar
         profileView.af_setImage(withURL: URL(string: "https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/avatar")!)
         
         let dateLabel = UILabel(frame: CGRect(x: 50, y: 10, width: 300, height: 30))
         let post = posts[section]
         let date = post["date"] as? String
-        
         dateLabel.text = date
-        
-        headerView.addSubview(profileView)
         headerView.addSubview(dateLabel)
         
         return headerView
