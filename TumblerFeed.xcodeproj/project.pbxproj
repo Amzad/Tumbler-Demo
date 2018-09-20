@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A2966966A9EB363B91A4E3F /* Pods_TumblerFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503F7C2C1D3E2F10C9CBFED3 /* Pods_TumblerFeed.framework */; };
+		21462B012153337C0057E12D /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21462B002153337C0057E12D /* PhotoDetailsViewController.swift */; };
 		2165EE7821490EBB00A25136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2165EE7721490EBB00A25136 /* AppDelegate.swift */; };
 		2165EE7D21490EBB00A25136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2165EE7B21490EBB00A25136 /* Main.storyboard */; };
 		2165EE7F21490EBC00A25136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2165EE7E21490EBC00A25136 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		117C6E877B20870E34BC28BA /* Pods_TumblerFeedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblerFeedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21462B002153337C0057E12D /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		2165EE7421490EBB00A25136 /* TumblerFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblerFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2165EE7721490EBB00A25136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2165EE7C21490EBB00A25136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21462AFF2153335C0057E12D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				21EFBBFB2149EACB005FF704 /* PhotosViewController.swift */,
+				21462B002153337C0057E12D /* PhotoDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2165EE6B21490EBB00A25136 = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +127,12 @@
 		2165EE7621490EBB00A25136 /* TumblerFeed */ = {
 			isa = PBXGroup;
 			children = (
+				21462AFF2153335C0057E12D /* ViewControllers */,
 				2165EE7721490EBB00A25136 /* AppDelegate.swift */,
 				2165EE7B21490EBB00A25136 /* Main.storyboard */,
 				2165EE7E21490EBC00A25136 /* Assets.xcassets */,
 				2165EE8021490EBC00A25136 /* LaunchScreen.storyboard */,
 				2165EE8321490EBC00A25136 /* Info.plist */,
-				21EFBBFB2149EACB005FF704 /* PhotosViewController.swift */,
 				21EFBBFF2149F038005FF704 /* PhotoCell.swift */,
 			);
 			path = TumblerFeed;
@@ -380,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21462B012153337C0057E12D /* PhotoDetailsViewController.swift in Sources */,
 				2165EE7821490EBB00A25136 /* AppDelegate.swift in Sources */,
 				21EFBC002149F038005FF704 /* PhotoCell.swift in Sources */,
 				21EFBBFC2149EACB005FF704 /* PhotosViewController.swift in Sources */,
