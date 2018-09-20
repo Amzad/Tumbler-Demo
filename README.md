@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Amzad/TumblerDemo/blob/master/tumbler.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Amzad/TumblerDemo/blob/master/tumbler.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
 ## Notes
 
@@ -64,30 +64,29 @@ Time spent: 0 hours spent in total
 
 The following **required** user stories are complete:
 
-- [ ] User can tab an image to view a larger image in a detail view (5pts)
+- [x] User can tab an image to view a larger image in a detail view (5pts)
 
 The following **stretch** user stories are implemented:
 
-- [ ] Add Avatar and Publish Dates (+2pt)
-- [ ] Zoomable Photo View (+2pt)
+- [x] Add Avatar and Publish Dates (+2pt)
+- [x] Zoomable Photo View (+2pt)
 - [ ] Infinite Scrolling (+2pt)
 
 The following **additional** user stories are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+- [x] Button to return back to detailed photo view.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Being able to zoom in the detailed view rather than creating another view.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Amzad/Tumbler-Demo/blob/master/tumbler2gif.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
-GIF created with .
+GIF created with Quicktime screen recorder + ezgif.com
 
 ## Notes
 
