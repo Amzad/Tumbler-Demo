@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Amzad/TumblerDemo/master/tumbler.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://github.com/Amzad/Tumbler-Demo/master/tumbler.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
 ## Notes
 
